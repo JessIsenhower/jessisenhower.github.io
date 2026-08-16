@@ -125,10 +125,10 @@
         discipline:'Revenue operations',
         focus:'Focused on connecting go-to-market strategy, systems, analytics, and enablement to strengthen operating clarity and execution.',
         terms:[
-          ['revenue operations','Revenue Operations'],['salesforce','Salesforce'],['gong','Gong'],['forecast','Forecasting'],
+          ['revenue operations','Revenue Operations'],['salesforce','Salesforce'],['gong','Gong'],['forecast','Forecasting'],['forecasting','Forecasting'],
           ['capacity planning','Capacity Planning'],['pipeline','Pipeline Management'],['enablement','Revenue Enablement'],
           ['onboarding','Onboarding'],['analytics','Revenue Analytics'],['executive','Executive Partnership'],
-          ['artificial intelligence','Artificial Intelligence'],['customer success','Customer Success']
+          ['artificial intelligence','Artificial Intelligence'],['ai','Artificial Intelligence'],['customer success','Customer Success']
         ]
       },
       pendo:{
@@ -140,7 +140,7 @@
           ['command of the message','Command of the Message'],['meddpicc','MEDDPICC'],['gong','Gong'],
           ['salesforce','Salesforce'],['onboarding','Onboarding'],['manager','Manager Enablement'],
           ['coaching','Coaching'],['certification','Certification'],['enablement','GTM Enablement'],
-          ['artificial intelligence','Artificial Intelligence'],['customer success','Customer Success'],['facilitation','Facilitation']
+          ['artificial intelligence','Artificial Intelligence'],['ai','Artificial Intelligence'],['customer success','Customer Success'],['facilitation','Facilitation']
         ]
       },
       elevenlabs:{
@@ -150,7 +150,7 @@
         focus:'Focused on translating fast-moving products into field confidence, repeatable learning, and scalable global operating structure.',
         terms:[
           ['global','Global Enablement'],['enablement','GTM Enablement'],['onboarding','Onboarding'],
-          ['artificial intelligence','Artificial Intelligence'],['salesforce','Salesforce'],['gong','Gong'],
+          ['artificial intelligence','Artificial Intelligence'],['ai','Artificial Intelligence'],['salesforce','Salesforce'],['gong','Gong'],
           ['seismic','Seismic'],['lms','Learning Management Systems'],['facilitation','Facilitation'],
           ['change management','Change Management'],['customer success','Customer Success'],['revenue','Revenue Strategy']
         ]
@@ -218,7 +218,7 @@
       const role=profiles[key];
       const source=sanitizeAts(resumeText);
       const found=role.terms.filter(([term])=>termPresent(source,term));
-      const labels=found.map(([,label])=>label);
+      const labels=[...new Set(found.map(([,label])=>label))];
       const leader=/\b(director|head of|vice president|vp|leader|leadership|managed|manager)\b/i.test(source);
       const identity=role.discipline+' '+(leader?'leader':'professional');
       const evidence=labels.slice(0,7);
