@@ -7,7 +7,7 @@
   <title>RevOps + AI Opportunity Engine</title>
   <style>
     :root{--ink:#14201d;--green:#17352f;--green2:#244b43;--cream:#f4f0e7;--paper:#fbfaf6;--sage:#dfe8df;--coral:#e96f50;--muted:#66716d;--line:#d9ded9;--white:#fff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}a{color:inherit}button,input{font:inherit}.shell{max-width:1180px;margin:auto;padding:0 28px}.topbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:12px;font-weight:800}.mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:white;font:700 12px Georgia,serif}.tag{border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.12em}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;padding:88px 0 80px;align-items:end}.eyebrow,.label{font-size:9px;text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:var(--coral)}h1,h2,h3{font-family:Georgia,serif;font-weight:500}h1{font-size:clamp(52px,7vw,94px);line-height:.96;letter-spacing:-.055em;margin:20px 0 26px}h1 em{font-weight:500;color:var(--coral)}.hero-copy>p:last-child{max-width:730px;color:var(--muted);font:17px/1.7 Georgia,serif}.criteria{background:var(--green);color:white;border-radius:18px;padding:28px}.criteria .label{color:#f3af9d}.criteria h2{font-size:27px;line-height:1.08;margin:22px 0}.criteria ul{list-style:none;margin:0;padding:0}.criteria li{padding:11px 0;border-top:1px solid #ffffff24;font-size:11px;color:#b8cac4}.section{padding:86px 0}.section-head{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end;padding-bottom:30px;border-bottom:1px solid var(--line)}.section-head h2{font-size:clamp(38px,4.7vw,61px);line-height:1.02;letter-spacing:-.04em;margin:14px 0 0}.section-head>p{color:var(--muted);font:14px/1.7 Georgia,serif;margin:0}.roles{display:grid;gap:15px;margin-top:34px}.role{border:1px solid var(--line);background:white;border-radius:18px;padding:27px;display:grid;grid-template-columns:1fr auto;gap:25px}.role-top{display:flex;gap:8px;flex-wrap:wrap}.pill{border-radius:999px;padding:6px 9px;background:var(--sage);font-size:8px;text-transform:uppercase;letter-spacing:.1em;font-weight:800}.pill.coral{background:#fde2da;color:#9b3b27}.pill.dark{background:var(--green);color:white}.role h3{font-size:31px;margin:22px 0 7px}.company{font-size:12px;color:var(--coral);font-weight:800}.role p{font-size:12px;color:var(--muted);max-width:760px}.signals{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.signals span{font-size:9px;border:1px solid var(--line);border-radius:999px;padding:7px 9px}.actions{display:flex;flex-direction:column;justify-content:center;gap:9px;min-width:190px}.btn{border:0;border-radius:999px;padding:12px 15px;font-size:10px;font-weight:800;cursor:pointer;text-decoration:none;text-align:center}.btn.primary{background:var(--green);color:white}.btn.primary:hover{background:var(--coral)}.btn.secondary{background:var(--cream)}.why{margin-top:18px;padding-top:17px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:20px}.why strong{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:5px}.why span{font-size:11px;color:var(--muted)}.workspace{background:var(--cream);padding:86px 0}.upload-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:16px;margin-top:34px}.upload,.output{background:white;border:1px solid var(--line);border-radius:18px;padding:28px}.drop{border:1px dashed #aeb8b2;border-radius:14px;padding:34px 20px;text-align:center;background:var(--paper)}.drop strong{font:500 24px Georgia,serif;display:block}.drop p{font-size:11px;color:var(--muted)}.file-label{display:inline-block;margin-top:8px;background:var(--coral);color:white;border-radius:999px;padding:11px 14px;font-size:10px;font-weight:800;cursor:pointer}.file-label input{position:absolute;left:-9999px}.privacy{margin-top:17px;font-size:10px;color:var(--muted)}.privacy b{color:var(--green)}.file-status{margin-top:14px;padding:12px;background:var(--sage);border-radius:10px;font-size:10px;display:none}.output h3{font-size:29px;margin:0 0 10px}.output-empty{color:var(--muted);font:14px/1.7 Georgia,serif}.output section{padding:17px 0;border-top:1px solid var(--line)}.output section:first-of-type{margin-top:20px}.output h4{font-size:9px;text-transform:uppercase;letter-spacing:.12em;margin:0 0 8px}.output ul{margin:0;padding-left:18px;color:var(--muted);font-size:11px}.output li{margin:7px 0}.copy{margin-top:16px}.method{background:var(--green);color:white}.method .section-head{border-color:#ffffff24}.method .section-head>p{color:#b8cac4}.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff24;border:1px solid #ffffff24;margin-top:34px}.method-grid article{background:var(--green);padding:28px;min-height:220px}.method-grid span{font-size:8px;text-transform:uppercase;letter-spacing:.14em;color:#f3af9d}.method-grid h3{font-size:24px;margin:42px 0 12px}.method-grid p{font-size:11px;color:#abc0b9}.sources{font-size:10px;color:var(--muted);padding:26px 0 60px}.sources a{color:var(--green)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}a{color:inherit}button,input{font:inherit}.shell{max-width:1180px;margin:auto;padding:0 28px}.topbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:12px;font-weight:800}.mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:white;font:700 12px Georgia,serif}.tag{border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.12em}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;padding:88px 0 80px;align-items:end}.eyebrow,.label{font-size:9px;text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:var(--coral)}h1,h2,h3{font-family:Georgia,serif;font-weight:500}h1{font-size:clamp(52px,7vw,94px);line-height:.96;letter-spacing:-.055em;margin:20px 0 26px}h1 em{font-weight:500;color:var(--coral)}.hero-copy>p:last-child{max-width:730px;color:var(--muted);font:17px/1.7 Georgia,serif}.criteria{background:var(--green);color:white;border-radius:18px;padding:28px}.criteria .label{color:#f3af9d}.criteria h2{font-size:27px;line-height:1.08;margin:22px 0}.criteria ul{list-style:none;margin:0;padding:0}.criteria li{padding:11px 0;border-top:1px solid #ffffff24;font-size:11px;color:#b8cac4}.section{padding:86px 0}.section-head{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end;padding-bottom:30px;border-bottom:1px solid var(--line)}.section-head h2{font-size:clamp(38px,4.7vw,61px);line-height:1.02;letter-spacing:-.04em;margin:14px 0 0}.section-head>p{color:var(--muted);font:14px/1.7 Georgia,serif;margin:0}.roles{display:grid;gap:15px;margin-top:34px}.role{border:1px solid var(--line);background:white;border-radius:18px;padding:27px;display:grid;grid-template-columns:1fr auto;gap:25px}.role-top{display:flex;gap:8px;flex-wrap:wrap}.pill{border-radius:999px;padding:6px 9px;background:var(--sage);font-size:8px;text-transform:uppercase;letter-spacing:.1em;font-weight:800}.pill.coral{background:#fde2da;color:#9b3b27}.pill.dark{background:var(--green);color:white}.role h3{font-size:31px;margin:22px 0 7px}.company{font-size:12px;color:var(--coral);font-weight:800}.role p{font-size:12px;color:var(--muted);max-width:760px}.signals{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.signals span{font-size:9px;border:1px solid var(--line);border-radius:999px;padding:7px 9px}.actions{display:flex;flex-direction:column;justify-content:center;gap:9px;min-width:190px}.btn{border:0;border-radius:999px;padding:12px 15px;font-size:10px;font-weight:800;cursor:pointer;text-decoration:none;text-align:center}.btn.primary{background:var(--green);color:white}.btn.primary:hover{background:var(--coral)}.btn.secondary{background:var(--cream)}.why{margin-top:18px;padding-top:17px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:20px}.why strong{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:5px}.why span{font-size:11px;color:var(--muted)}.workspace{background:var(--cream);padding:86px 0}.upload-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:16px;margin-top:34px}.upload,.output{background:white;border:1px solid var(--line);border-radius:18px;padding:28px}.drop{border:1px dashed #aeb8b2;border-radius:14px;padding:34px 20px;text-align:center;background:var(--paper)}.drop strong{font:500 24px Georgia,serif;display:block}.drop p{font-size:11px;color:var(--muted)}.file-label{display:inline-block;margin-top:8px;background:var(--coral);color:white;border-radius:999px;padding:11px 14px;font-size:10px;font-weight:800;cursor:pointer}.file-label input{position:absolute;left:-9999px}.privacy{margin-top:17px;font-size:10px;color:var(--muted)}.privacy b{color:var(--green)}.file-status{margin-top:14px;padding:15px 16px;background:var(--sage);border:1px solid #bdd0c0;border-radius:10px;font-size:12px;font-weight:800;display:none}.file-status.success{display:block;background:#e3efe4;color:#17352f}.file-status.error{display:block;background:#fde2da;border-color:#efb2a1;color:#8b2f1f}.role-picker{margin-top:16px}.role-picker strong{display:block;margin-bottom:8px;font-size:9px;text-transform:uppercase;letter-spacing:.12em}.role-options{display:flex;flex-wrap:wrap;gap:7px}.role-choice{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 10px;font-size:9px;font-weight:800;cursor:pointer}.role-choice.active{background:var(--green);border-color:var(--green);color:white}.output h3{font-size:29px;margin:0 0 10px}.output-empty{color:var(--muted);font:14px/1.7 Georgia,serif}.output section{padding:17px 0;border-top:1px solid var(--line)}.output section:first-of-type{margin-top:20px}.output h4{font-size:9px;text-transform:uppercase;letter-spacing:.12em;margin:0 0 8px}.output ul{margin:0;padding-left:18px;color:var(--muted);font-size:11px}.output li{margin:7px 0}.copy{margin-top:16px}.method{background:var(--green);color:white}.method .section-head{border-color:#ffffff24}.method .section-head>p{color:#b8cac4}.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff24;border:1px solid #ffffff24;margin-top:34px}.method-grid article{background:var(--green);padding:28px;min-height:220px}.method-grid span{font-size:8px;text-transform:uppercase;letter-spacing:.14em;color:#f3af9d}.method-grid h3{font-size:24px;margin:42px 0 12px}.method-grid p{font-size:11px;color:#abc0b9}.sources{font-size:10px;color:var(--muted);padding:26px 0 60px}.sources a{color:var(--green)}
     @media(max-width:800px){.hero,.section-head,.upload-grid{grid-template-columns:1fr}.role{grid-template-columns:1fr}.actions{min-width:0}.method-grid{grid-template-columns:1fr}.why{grid-template-columns:1fr}.hero{padding-top:56px}h1{font-size:52px}.section{padding:65px 0}.shell{padding:0 18px}}
   </style>
 </head>
@@ -84,7 +84,8 @@
         <div class="upload-grid">
           <div class="upload">
             <div class="drop"><strong>Choose your résumé</strong><p>PDF, DOCX, TXT, or Markdown</p><label class="file-label">Select file<input id="resume-file" type="file" accept=".pdf,.docx,.txt,.md"></label></div>
-            <div class="file-status" id="file-status"></div>
+            <div class="file-status" id="file-status" role="status" aria-live="polite"></div>
+            <div class="role-picker"><strong>Tailor for</strong><div class="role-options"><button class="role-choice active" data-role="loop">Loop</button><button class="role-choice" data-role="pendo">Pendo</button><button class="role-choice" data-role="elevenlabs">ElevenLabs</button></div></div>
             <p class="privacy"><b>Private by design.</b> Closing or refreshing the tab clears the extracted text. Nothing is submitted with an application.</p>
           </div>
           <div class="output" id="tailoring-output">
@@ -116,7 +117,7 @@
   <script type="module">
     import * as pdfjsLib from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.min.mjs';
     pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.min.mjs';
-    let resumeText=''; let selectedRole='';
+    let resumeText=''; let selectedRole='loop';
     const profiles={
       loop:{title:'Senior Director, Revenue Operations at Loop',lead:'Lead with the pattern of connecting revenue systems, executive insight, onboarding, and enablement—not with a generic RevOps title.',terms:['salesforce','gong','forecast','capacity planning','pipeline','enablement','onboarding','analytics','executive','revenue operations','ai','customer success'],proof:['Cross-functional RevOps ownership','GTM systems implementation and adoption','Executive insight from revenue signals','Onboarding and enablement connected to operations']},
       pendo:{title:'Senior Director, GTM Enablement at Pendo',lead:'Lead with global enablement architecture and reinforcement: methodology, manager coaching, Gong signals, onboarding, and AI-supported practice.',terms:['command of the message','meddpicc','gong','salesforce','onboarding','manager','coaching','certification','enablement','ai','customer success','facilitation'],proof:['Command of the Message and MEDDPICC experience','Gong implementation and signal design','Role-based onboarding and certification','AI-assisted coaching or learning workflows']},
@@ -125,21 +126,64 @@
     const fileInput=document.querySelector('#resume-file');
     const status=document.querySelector('#file-status');
     const output=document.querySelector('#tailoring-output');
+    function readFile(file,mode){
+      return new Promise((resolve,reject)=>{
+        const reader=new FileReader();
+        reader.onload=()=>resolve(reader.result);
+        reader.onerror=()=>reject(reader.error||new Error('The browser could not read this file.'));
+        if(mode==='arrayBuffer') reader.readAsArrayBuffer(file); else reader.readAsText(file);
+      });
+    }
+    function setSelectedRole(key){
+      selectedRole=key;
+      document.querySelectorAll('.role-choice').forEach(button=>button.classList.toggle('active',button.dataset.role===key));
+      if(resumeText) renderPlan(key);
+    }
+    async function extractResume(file){
+      const ext=file.name.split('.').pop().toLowerCase();
+      if(ext==='txt'||ext==='md') return String(await readFile(file,'text'));
+      const buffer=await readFile(file,'arrayBuffer');
+      if(ext==='docx'){
+        if(!window.mammoth) throw new Error('The DOCX reader did not load. Please refresh and try again.');
+        const result=await window.mammoth.extractRawText({arrayBuffer:buffer});
+        return result.value;
+      }
+      if(ext==='pdf'){
+        const pdf=await pdfjsLib.getDocument({data:new Uint8Array(buffer)}).promise;
+        const pages=[];
+        for(let i=1;i<=pdf.numPages;i++){
+          const page=await pdf.getPage(i);
+          const content=await page.getTextContent();
+          pages.push(content.items.map(item=>item.str).join(' '));
+        }
+        return pages.join('\n');
+      }
+      throw new Error('Unsupported file type.');
+    }
     fileInput.addEventListener('change',async()=>{
-      const file=fileInput.files[0]; if(!file)return;
-      status.style.display='block'; status.textContent='Reading '+file.name+' locally…';
+      const file=fileInput.files&&fileInput.files[0]; if(!file)return;
+      status.className='file-status';
+      status.style.display='block';
+      status.textContent='Reading '+file.name+' locally…';
       try{
-        const ext=file.name.split('.').pop().toLowerCase();
-        if(ext==='txt'||ext==='md') resumeText=await file.text();
-        else if(ext==='docx'){const result=await window.mammoth.extractRawText({arrayBuffer:await file.arrayBuffer()});resumeText=result.value;}
-        else if(ext==='pdf'){const pdf=await pdfjsLib.getDocument({data:await file.arrayBuffer()}).promise;const pages=[];for(let i=1;i<=pdf.numPages;i++){const page=await pdf.getPage(i);const content=await page.getTextContent();pages.push(content.items.map(item=>item.str).join(' '));}resumeText=pages.join('\n');}
-        else throw new Error('Unsupported file type');
-        status.textContent='Ready: '+file.name+'. The extracted text stays in this tab.';
-        if(selectedRole) renderPlan(selectedRole);
-      }catch(err){resumeText='';status.textContent='I could not read that file. Try a PDF, DOCX, TXT, or Markdown résumé.';}
+        resumeText=(await extractResume(file)).replace(/\s+/g,' ').trim();
+        if(resumeText.length<40) throw new Error('Very little text was found. If this is a scanned PDF, try a text-based PDF, DOCX, or TXT file.');
+        const words=resumeText.split(/\s+/).length;
+        status.className='file-status success';
+        status.textContent='✓ Résumé ready — '+file.name+' ('+words.toLocaleString()+' words extracted locally). Your '+profiles[selectedRole].title+' plan is below.';
+        renderPlan(selectedRole);
+        output.scrollIntoView({behavior:'smooth',block:'nearest'});
+      }catch(err){
+        resumeText='';
+        status.className='file-status error';
+        status.textContent='Could not read '+file.name+'. '+(err&&err.message?err.message:'Try a PDF, DOCX, TXT, or Markdown résumé.');
+        output.innerHTML='<h3>Résumé not ready</h3><p class="output-empty">Try another file. Text-based PDF, DOCX, TXT, and Markdown files work best.</p>';
+        console.error('Résumé extraction failed',err);
+      }
     });
+    document.querySelectorAll('.role-choice').forEach(button=>button.addEventListener('click',()=>setSelectedRole(button.dataset.role)));
     document.querySelectorAll('.customize').forEach(button=>button.addEventListener('click',()=>{
-      selectedRole=button.dataset.role;document.querySelector('#resume-workspace').scrollIntoView({behavior:'smooth'});renderPlan(selectedRole);
+      setSelectedRole(button.dataset.role);document.querySelector('#resume-workspace').scrollIntoView({behavior:'smooth'});renderPlan(selectedRole);
     }));
     function renderPlan(key){
       const role=profiles[key];
