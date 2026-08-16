@@ -7,7 +7,7 @@
   <title>RevOps + AI Opportunity Engine</title>
   <style>
     :root{--ink:#14201d;--green:#17352f;--green2:#244b43;--cream:#f4f0e7;--paper:#fbfaf6;--sage:#dfe8df;--coral:#e96f50;--muted:#66716d;--line:#d9ded9;--white:#fff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}a{color:inherit}button,input{font:inherit}.shell{max-width:1180px;margin:auto;padding:0 28px}.topbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:12px;font-weight:800}.mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:white;font:700 12px Georgia,serif}.tag{border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.12em}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;padding:88px 0 80px;align-items:end}.eyebrow,.label{font-size:9px;text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:var(--coral)}h1,h2,h3{font-family:Georgia,serif;font-weight:500}h1{font-size:clamp(52px,7vw,94px);line-height:.96;letter-spacing:-.055em;margin:20px 0 26px}h1 em{font-weight:500;color:var(--coral)}.hero-copy>p:last-child{max-width:730px;color:var(--muted);font:17px/1.7 Georgia,serif}.criteria{background:var(--green);color:white;border-radius:18px;padding:28px}.criteria .label{color:#f3af9d}.criteria h2{font-size:27px;line-height:1.08;margin:22px 0}.criteria ul{list-style:none;margin:0;padding:0}.criteria li{padding:11px 0;border-top:1px solid #ffffff24;font-size:11px;color:#b8cac4}.section{padding:86px 0}.section-head{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end;padding-bottom:30px;border-bottom:1px solid var(--line)}.section-head h2{font-size:clamp(38px,4.7vw,61px);line-height:1.02;letter-spacing:-.04em;margin:14px 0 0}.section-head>p{color:var(--muted);font:14px/1.7 Georgia,serif;margin:0}.roles{display:grid;gap:15px;margin-top:34px}.role{border:1px solid var(--line);background:white;border-radius:18px;padding:27px;display:grid;grid-template-columns:1fr auto;gap:25px}.role-top{display:flex;gap:8px;flex-wrap:wrap}.pill{border-radius:999px;padding:6px 9px;background:var(--sage);font-size:8px;text-transform:uppercase;letter-spacing:.1em;font-weight:800}.pill.coral{background:#fde2da;color:#9b3b27}.pill.dark{background:var(--green);color:white}.role h3{font-size:31px;margin:22px 0 7px}.company{font-size:12px;color:var(--coral);font-weight:800}.role p{font-size:12px;color:var(--muted);max-width:760px}.signals{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.signals span{font-size:9px;border:1px solid var(--line);border-radius:999px;padding:7px 9px}.actions{display:flex;flex-direction:column;justify-content:center;gap:9px;min-width:190px}.btn{border:0;border-radius:999px;padding:12px 15px;font-size:10px;font-weight:800;cursor:pointer;text-decoration:none;text-align:center}.btn.primary{background:var(--green);color:white}.btn.primary:hover{background:var(--coral)}.btn.secondary{background:var(--cream)}.why{margin-top:18px;padding-top:17px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:20px}.why strong{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:5px}.why span{font-size:11px;color:var(--muted)}.workspace{background:var(--cream);padding:86px 0}.upload-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:16px;margin-top:34px}.upload,.output{background:white;border:1px solid var(--line);border-radius:18px;padding:28px}.drop{border:1px dashed #aeb8b2;border-radius:14px;padding:34px 20px;text-align:center;background:var(--paper)}.drop strong{font:500 24px Georgia,serif;display:block}.drop p{font-size:11px;color:var(--muted)}.file-label{display:inline-block;margin-top:8px;background:var(--coral);color:white;border-radius:999px;padding:11px 14px;font-size:10px;font-weight:800;cursor:pointer}.file-label input{position:absolute;left:-9999px}.privacy{margin-top:17px;font-size:10px;color:var(--muted)}.privacy b{color:var(--green)}.file-status{margin-top:14px;padding:15px 16px;background:var(--sage);border:1px solid #bdd0c0;border-radius:10px;font-size:12px;font-weight:800;display:none}.file-status.success{display:block;background:#e3efe4;color:#17352f}.file-status.error{display:block;background:#fde2da;border-color:#efb2a1;color:#8b2f1f}.role-picker{margin-top:16px}.role-picker strong{display:block;margin-bottom:8px;font-size:9px;text-transform:uppercase;letter-spacing:.12em}.role-options{display:flex;flex-wrap:wrap;gap:7px}.role-choice{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 10px;font-size:9px;font-weight:800;cursor:pointer}.role-choice.active{background:var(--green);border-color:var(--green);color:white}.output h3{font-size:29px;margin:0 0 10px}.output-empty{color:var(--muted);font:14px/1.7 Georgia,serif}.output section{padding:17px 0;border-top:1px solid var(--line)}.output section:first-of-type{margin-top:20px}.output h4{font-size:9px;text-transform:uppercase;letter-spacing:.12em;margin:0 0 8px}.output ul{margin:0;padding-left:18px;color:var(--muted);font-size:11px}.output li{margin:7px 0}.copy{margin-top:16px}.method{background:var(--green);color:white}.method .section-head{border-color:#ffffff24}.method .section-head>p{color:#b8cac4}.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff24;border:1px solid #ffffff24;margin-top:34px}.method-grid article{background:var(--green);padding:28px;min-height:220px}.method-grid span{font-size:8px;text-transform:uppercase;letter-spacing:.14em;color:#f3af9d}.method-grid h3{font-size:24px;margin:42px 0 12px}.method-grid p{font-size:11px;color:#abc0b9}.sources{font-size:10px;color:var(--muted);padding:26px 0 60px}.sources a{color:var(--green)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}a{color:inherit}button,input{font:inherit}.shell{max-width:1180px;margin:auto;padding:0 28px}.topbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:12px;font-weight:800}.mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:white;font:700 12px Georgia,serif}.tag{border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.12em}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;padding:88px 0 80px;align-items:end}.eyebrow,.label{font-size:9px;text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:var(--coral)}h1,h2,h3{font-family:Georgia,serif;font-weight:500}h1{font-size:clamp(52px,7vw,94px);line-height:.96;letter-spacing:-.055em;margin:20px 0 26px}h1 em{font-weight:500;color:var(--coral)}.hero-copy>p:last-child{max-width:730px;color:var(--muted);font:17px/1.7 Georgia,serif}.criteria{background:var(--green);color:white;border-radius:18px;padding:28px}.criteria .label{color:#f3af9d}.criteria h2{font-size:27px;line-height:1.08;margin:22px 0}.criteria ul{list-style:none;margin:0;padding:0}.criteria li{padding:11px 0;border-top:1px solid #ffffff24;font-size:11px;color:#b8cac4}.section{padding:86px 0}.section-head{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end;padding-bottom:30px;border-bottom:1px solid var(--line)}.section-head h2{font-size:clamp(38px,4.7vw,61px);line-height:1.02;letter-spacing:-.04em;margin:14px 0 0}.section-head>p{color:var(--muted);font:14px/1.7 Georgia,serif;margin:0}.roles{display:grid;gap:15px;margin-top:34px}.role{border:1px solid var(--line);background:white;border-radius:18px;padding:27px;display:grid;grid-template-columns:1fr auto;gap:25px}.role-top{display:flex;gap:8px;flex-wrap:wrap}.pill{border-radius:999px;padding:6px 9px;background:var(--sage);font-size:8px;text-transform:uppercase;letter-spacing:.1em;font-weight:800}.pill.coral{background:#fde2da;color:#9b3b27}.pill.dark{background:var(--green);color:white}.role h3{font-size:31px;margin:22px 0 7px}.company{font-size:12px;color:var(--coral);font-weight:800}.role p{font-size:12px;color:var(--muted);max-width:760px}.signals{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.signals span{font-size:9px;border:1px solid var(--line);border-radius:999px;padding:7px 9px}.actions{display:flex;flex-direction:column;justify-content:center;gap:9px;min-width:190px}.btn{border:0;border-radius:999px;padding:12px 15px;font-size:10px;font-weight:800;cursor:pointer;text-decoration:none;text-align:center}.btn.primary{background:var(--green);color:white}.btn.primary:hover{background:var(--coral)}.btn.secondary{background:var(--cream)}.why{margin-top:18px;padding-top:17px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:20px}.why strong{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:5px}.why span{font-size:11px;color:var(--muted)}.workspace{background:var(--cream);padding:86px 0}.upload-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:16px;margin-top:34px}.upload,.output{background:white;border:1px solid var(--line);border-radius:18px;padding:28px}.drop{border:1px dashed #aeb8b2;border-radius:14px;padding:34px 20px;text-align:center;background:var(--paper)}.drop strong{font:500 24px Georgia,serif;display:block}.drop p{font-size:11px;color:var(--muted)}.file-label{display:inline-block;margin-top:8px;background:var(--coral);color:white;border-radius:999px;padding:11px 14px;font-size:10px;font-weight:800;cursor:pointer}.file-label input{position:absolute;left:-9999px}.privacy{margin-top:17px;font-size:10px;color:var(--muted)}.privacy b{color:var(--green)}.file-status{margin-top:14px;padding:15px 16px;background:var(--sage);border:1px solid #bdd0c0;border-radius:10px;font-size:12px;font-weight:800;display:none}.file-status.success{display:block;background:#e3efe4;color:#17352f}.file-status.error{display:block;background:#fde2da;border-color:#efb2a1;color:#8b2f1f}.role-picker{margin-top:16px}.role-picker strong{display:block;margin-bottom:8px;font-size:9px;text-transform:uppercase;letter-spacing:.12em}.role-options{display:flex;flex-wrap:wrap;gap:7px}.role-choice{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 10px;font-size:9px;font-weight:800;cursor:pointer}.role-choice.active{background:var(--green);border-color:var(--green);color:white}.output h3{font-size:29px;margin:0 0 10px}.output-empty{color:var(--muted);font:14px/1.7 Georgia,serif}.output section{padding:17px 0;border-top:1px solid var(--line)}.output section:first-of-type{margin-top:20px}.output h4{font-size:9px;text-transform:uppercase;letter-spacing:.12em;margin:0 0 8px}.output ul{margin:0;padding-left:18px;color:var(--muted);font-size:11px}.output li{margin:7px 0}.copy{margin-top:16px}.resume-kicker{margin:0 0 16px;color:var(--muted);font-size:11px}.resume-document{width:100%;min-height:620px;resize:vertical;border:1px solid var(--line);border-radius:12px;background:#fff;color:#17201d;padding:24px;font:13px/1.55 Arial,Helvetica,sans-serif;white-space:pre-wrap;tab-size:2}.resume-document:focus{outline:2px solid #e96f5055;border-color:var(--coral)}.resume-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}.resume-note{margin:12px 0 0;color:var(--muted);font-size:9px;line-height:1.5}.method{background:var(--green);color:white}.method .section-head{border-color:#ffffff24}.method .section-head>p{color:#b8cac4}.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff24;border:1px solid #ffffff24;margin-top:34px}.method-grid article{background:var(--green);padding:28px;min-height:220px}.method-grid span{font-size:8px;text-transform:uppercase;letter-spacing:.14em;color:#f3af9d}.method-grid h3{font-size:24px;margin:42px 0 12px}.method-grid p{font-size:11px;color:#abc0b9}.sources{font-size:10px;color:var(--muted);padding:26px 0 60px}.sources a{color:var(--green)}
     @media(max-width:800px){.hero,.section-head,.upload-grid{grid-template-columns:1fr}.role{grid-template-columns:1fr}.actions{min-width:0}.method-grid{grid-template-columns:1fr}.why{grid-template-columns:1fr}.hero{padding-top:56px}h1{font-size:52px}.section{padding:65px 0}.shell{padding:0 18px}}
   </style>
 </head>
@@ -89,8 +89,8 @@
             <p class="privacy"><b>Private by design.</b> Closing or refreshing the tab clears the extracted text. Nothing is submitted with an application.</p>
           </div>
           <div class="output" id="tailoring-output">
-            <h3>Your role-specific plan</h3>
-            <p class="output-empty">Upload a résumé, then choose “Customize my résumé” on any role. The engine will identify relevant evidence, missing language, and the strongest story to lead with—without inventing experience.</p>
+            <h3>Your ATS-friendly résumé</h3>
+            <p class="output-empty">Upload a résumé and choose a role. The engine will produce the complete clean-text résumé here, ready to edit, copy, or download. It uses role language only when your source résumé supports it.</p>
           </div>
         </div>
       </div>
@@ -119,13 +119,47 @@
     pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.min.mjs';
     let resumeText=''; let selectedRole='loop';
     const profiles={
-      loop:{title:'Senior Director, Revenue Operations at Loop',lead:'Lead with the pattern of connecting revenue systems, executive insight, onboarding, and enablement—not with a generic RevOps title.',terms:['salesforce','gong','forecast','capacity planning','pipeline','enablement','onboarding','analytics','executive','revenue operations','ai','customer success'],proof:['Cross-functional RevOps ownership','GTM systems implementation and adoption','Executive insight from revenue signals','Onboarding and enablement connected to operations']},
-      pendo:{title:'Senior Director, GTM Enablement at Pendo',lead:'Lead with global enablement architecture and reinforcement: methodology, manager coaching, Gong signals, onboarding, and AI-supported practice.',terms:['command of the message','meddpicc','gong','salesforce','onboarding','manager','coaching','certification','enablement','ai','customer success','facilitation'],proof:['Command of the Message and MEDDPICC experience','Gong implementation and signal design','Role-based onboarding and certification','AI-assisted coaching or learning workflows']},
-      elevenlabs:{title:'Head of GTM Enablement at ElevenLabs',lead:'Lead with the ability to translate a fast-moving technical product into field confidence, repeatable learning, and global operating structure.',terms:['global','enablement','onboarding','ai','salesforce','gong','seismic','lms','facilitation','change management','customer success','revenue'],proof:['Global enablement leadership','AI applied to real GTM workflows','Systems and learning infrastructure','Executive-to-field translation']}
+      loop:{
+        title:'Senior Director, Revenue Operations at Loop',
+        resumeTitle:'Senior Director, Revenue Operations',
+        discipline:'Revenue operations',
+        focus:'Focused on connecting go-to-market strategy, systems, analytics, and enablement to strengthen operating clarity and execution.',
+        terms:[
+          ['revenue operations','Revenue Operations'],['salesforce','Salesforce'],['gong','Gong'],['forecast','Forecasting'],['forecasting','Forecasting'],
+          ['capacity planning','Capacity Planning'],['pipeline','Pipeline Management'],['enablement','Revenue Enablement'],
+          ['onboarding','Onboarding'],['analytics','Revenue Analytics'],['executive','Executive Partnership'],
+          ['artificial intelligence','Artificial Intelligence'],['ai','Artificial Intelligence'],['customer success','Customer Success']
+        ]
+      },
+      pendo:{
+        title:'Senior Director, GTM Enablement at Pendo',
+        resumeTitle:'Senior Director, GTM Enablement',
+        discipline:'GTM enablement',
+        focus:'Focused on building repeatable learning, manager reinforcement, and systems-supported field execution.',
+        terms:[
+          ['command of the message','Command of the Message'],['meddpicc','MEDDPICC'],['gong','Gong'],
+          ['salesforce','Salesforce'],['onboarding','Onboarding'],['manager','Manager Enablement'],
+          ['coaching','Coaching'],['certification','Certification'],['enablement','GTM Enablement'],
+          ['artificial intelligence','Artificial Intelligence'],['ai','Artificial Intelligence'],['customer success','Customer Success'],['facilitation','Facilitation']
+        ]
+      },
+      elevenlabs:{
+        title:'Head of GTM Enablement at ElevenLabs',
+        resumeTitle:'Head of GTM Enablement',
+        discipline:'Global GTM enablement',
+        focus:'Focused on translating fast-moving products into field confidence, repeatable learning, and scalable global operating structure.',
+        terms:[
+          ['global','Global Enablement'],['enablement','GTM Enablement'],['onboarding','Onboarding'],
+          ['artificial intelligence','Artificial Intelligence'],['ai','Artificial Intelligence'],['salesforce','Salesforce'],['gong','Gong'],
+          ['seismic','Seismic'],['lms','Learning Management Systems'],['facilitation','Facilitation'],
+          ['change management','Change Management'],['customer success','Customer Success'],['revenue','Revenue Strategy']
+        ]
+      }
     };
     const fileInput=document.querySelector('#resume-file');
     const status=document.querySelector('#file-status');
     const output=document.querySelector('#tailoring-output');
+
     function readFile(file,mode){
       return new Promise((resolve,reject)=>{
         const reader=new FileReader();
@@ -134,11 +168,87 @@
         if(mode==='arrayBuffer') reader.readAsArrayBuffer(file); else reader.readAsText(file);
       });
     }
+
+    function normalizeSource(text){
+      return String(text)
+        .replace(/\r\n?/g,'\n')
+        .replace(/\u00a0/g,' ')
+        .replace(/[ \t]+/g,' ')
+        .replace(/ *\n */g,'\n')
+        .replace(/\n{3,}/g,'\n\n')
+        .trim();
+    }
+
+    function sanitizeAts(text){
+      return String(text)
+        .replace(/[—–−]/g,'-')
+        .replace(/[•▪◦●]/g,'-')
+        .replace(/[“”]/g,'"')
+        .replace(/[‘’]/g,"'")
+        .replace(/\u00a0/g,' ')
+        .replace(/[ \t]+\n/g,'\n')
+        .replace(/\n{3,}/g,'\n\n')
+        .trim();
+    }
+
+    function termPresent(text,term){
+      const escaped=term.replace(/[.*+?^$()|[\]\\]/g,'\\$&');
+      return new RegExp('(^|[^a-z0-9])'+escaped+'(?=$|[^a-z0-9])','i').test(text);
+    }
+
+    function joinNatural(items){
+      if(items.length<2) return items[0]||'';
+      if(items.length===2) return items.join(' and ');
+      return items.slice(0,-1).join(', ')+', and '+items[items.length-1];
+    }
+
+    function splitHeader(source){
+      const blocks=source.split(/\n{2,}/);
+      if(blocks.length>1&&blocks[0].length<=400&&blocks[0].split('\n').length<=7){
+        return {header:blocks.shift().trim(),body:blocks.join('\n\n').trim()};
+      }
+      const lines=source.split('\n');
+      if(lines.length>2&&lines[0].trim().length>0&&lines[0].length<=90){
+        return {header:lines.shift().trim(),body:lines.join('\n').trim()};
+      }
+      return {header:'',body:source};
+    }
+
+    function buildAtsResume(key){
+      const role=profiles[key];
+      const source=sanitizeAts(resumeText);
+      const found=role.terms.filter(([term])=>termPresent(source,term));
+      const labels=[...new Set(found.map(([,label])=>label))];
+      const leader=/\b(director|head of|vice president|vp|leader|leadership|managed|manager)\b/i.test(source);
+      const identity=role.discipline+' '+(leader?'leader':'professional');
+      const evidence=labels.slice(0,7);
+      const summary=evidence.length
+        ? identity.charAt(0).toUpperCase()+identity.slice(1)+' with experience across '+joinNatural(evidence)+'. '+role.focus
+        : identity.charAt(0).toUpperCase()+identity.slice(1)+'. '+role.focus;
+      const parts=splitHeader(source);
+      const sections=[];
+      if(parts.header) sections.push(parts.header);
+      sections.push(role.resumeTitle);
+      sections.push('PROFESSIONAL SUMMARY\n'+summary);
+      if(labels.length) sections.push('CORE COMPETENCIES\n'+labels.slice(0,12).join(' | '));
+      if(parts.body) sections.push(parts.body);
+      return sanitizeAts(sections.join('\n\n'));
+    }
+
+    function escapeHtml(text){
+      return String(text).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+
+    function safeFilename(text){
+      return text.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    }
+
     function setSelectedRole(key){
       selectedRole=key;
       document.querySelectorAll('.role-choice').forEach(button=>button.classList.toggle('active',button.dataset.role===key));
-      if(resumeText) renderPlan(key);
+      if(resumeText) renderResume(key);
     }
+
     async function extractResume(file){
       const ext=file.name.split('.').pop().toLowerCase();
       if(ext==='txt'||ext==='md') return String(await readFile(file,'text'));
@@ -154,24 +264,34 @@
         for(let i=1;i<=pdf.numPages;i++){
           const page=await pdf.getPage(i);
           const content=await page.getTextContent();
-          pages.push(content.items.map(item=>item.str).join(' '));
+          const lines=[];
+          let current=[]; let lastY=null;
+          for(const item of content.items){
+            const y=item.transform&&item.transform[5];
+            if(lastY!==null&&y!==undefined&&Math.abs(y-lastY)>3){lines.push(current.join(' '));current=[];}
+            current.push(item.str);
+            if(y!==undefined) lastY=y;
+          }
+          if(current.length) lines.push(current.join(' '));
+          pages.push(lines.join('\n'));
         }
-        return pages.join('\n');
+        return pages.join('\n\n');
       }
       throw new Error('Unsupported file type.');
     }
+
     fileInput.addEventListener('change',async()=>{
       const file=fileInput.files&&fileInput.files[0]; if(!file)return;
       status.className='file-status';
       status.style.display='block';
-      status.textContent='Reading '+file.name+' locally…';
+      status.textContent='Reading '+file.name+' locally...';
       try{
-        resumeText=(await extractResume(file)).replace(/\s+/g,' ').trim();
+        resumeText=normalizeSource(await extractResume(file));
         if(resumeText.length<40) throw new Error('Very little text was found. If this is a scanned PDF, try a text-based PDF, DOCX, or TXT file.');
         const words=resumeText.split(/\s+/).length;
         status.className='file-status success';
-        status.textContent='✓ Résumé ready — '+file.name+' ('+words.toLocaleString()+' words extracted locally). Your '+profiles[selectedRole].title+' plan is below.';
-        renderPlan(selectedRole);
+        status.textContent='✓ Résumé ready: '+file.name+' ('+words.toLocaleString()+' words extracted locally). Your complete ATS résumé is below.';
+        renderResume(selectedRole);
         output.scrollIntoView({behavior:'smooth',block:'nearest'});
       }catch(err){
         resumeText='';
@@ -181,18 +301,46 @@
         console.error('Résumé extraction failed',err);
       }
     });
+
     document.querySelectorAll('.role-choice').forEach(button=>button.addEventListener('click',()=>setSelectedRole(button.dataset.role)));
     document.querySelectorAll('.customize').forEach(button=>button.addEventListener('click',()=>{
-      setSelectedRole(button.dataset.role);document.querySelector('#resume-workspace').scrollIntoView({behavior:'smooth'});renderPlan(selectedRole);
+      setSelectedRole(button.dataset.role);
+      document.querySelector('#resume-workspace').scrollIntoView({behavior:'smooth'});
+      if(!resumeText) renderResume(selectedRole);
     }));
-    function renderPlan(key){
+
+    function renderResume(key){
       const role=profiles[key];
-      if(!resumeText){output.innerHTML='<h3>'+role.title+'</h3><p class="output-empty">Choose your résumé first. I’ll build the tailoring plan as soon as the file is ready.</p>';fileInput.focus();return;}
-      const lower=resumeText.toLowerCase();const found=role.terms.filter(term=>lower.includes(term));const missing=role.terms.filter(term=>!lower.includes(term));
-      const foundText=found.length?found.slice(0,8).join(', '):'No direct phrase matches found yet';
-      const missingText=missing.length?missing.slice(0,6).join(', '):'No obvious language gaps';
-      output.innerHTML='<h3>'+role.title+'</h3><section><h4>Lead story</h4><p class="output-empty">'+role.lead+'</p></section><section><h4>Evidence to elevate</h4><ul>'+role.proof.map(item=>'<li>'+item+'</li>').join('')+'</ul></section><section><h4>Language already present</h4><p class="output-empty">'+foundText+'</p></section><section><h4>Language to verify and add only if true</h4><p class="output-empty">'+missingText+'</p></section><button class="btn primary copy" id="copy-plan">Copy tailoring brief</button>';
-      document.querySelector('#copy-plan').addEventListener('click',()=>{const text=role.title+'\n\nLead story: '+role.lead+'\n\nEvidence to elevate:\n- '+role.proof.join('\n- ')+'\n\nLanguage present: '+foundText+'\n\nLanguage to verify: '+missingText;navigator.clipboard.writeText(text);document.querySelector('#copy-plan').textContent='Copied';});
+      if(!resumeText){
+        output.innerHTML='<h3>'+role.resumeTitle+'</h3><p class="output-empty">Choose your résumé first. The complete ATS-friendly version will appear here as soon as the file is ready.</p>';
+        fileInput.focus();
+        return;
+      }
+      const atsResume=buildAtsResume(key);
+      output.innerHTML=
+        '<h3>ATS-friendly résumé</h3>'+
+        '<p class="resume-kicker">Tailored for <b>'+role.title+'</b>. Edit the text directly before copying or downloading.</p>'+
+        '<textarea class="resume-document" id="ats-resume" spellcheck="true" aria-label="Customized ATS-friendly resume">'+escapeHtml(atsResume)+'</textarea>'+
+        '<div class="resume-actions"><button class="btn primary" id="copy-resume">Copy résumé</button><button class="btn secondary" id="download-resume">Download clean .txt</button></div>'+
+        '<p class="resume-note">The generated version keeps your source experience intact, removes ATS-unfriendly characters, and adds only competencies found in your uploaded résumé. Review every line before applying.</p>';
+      document.querySelector('#copy-resume').addEventListener('click',async()=>{
+        const button=document.querySelector('#copy-resume');
+        await navigator.clipboard.writeText(document.querySelector('#ats-resume').value);
+        button.textContent='Copied';
+        setTimeout(()=>button.textContent='Copy résumé',1600);
+      });
+      document.querySelector('#download-resume').addEventListener('click',()=>{
+        const text=document.querySelector('#ats-resume').value;
+        const blob=new Blob([text],{type:'text/plain;charset=utf-8'});
+        const url=URL.createObjectURL(blob);
+        const link=document.createElement('a');
+        link.href=url;
+        link.download=safeFilename(role.resumeTitle)+'-ats-resume.txt';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url);
+      });
     }
   </script>
 </body>
