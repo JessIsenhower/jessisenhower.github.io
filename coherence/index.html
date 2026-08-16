@@ -13,24 +13,24 @@ document.querySelector('#suite').innerHTML=tools.map(t=>`<button data-view="${t[
 document.querySelectorAll('.nav')[0].insertAdjacentHTML('beforeend','<button data-view="connections"><i>⇄</i>Data connections<em>GUIDE</em></button>');
 document.querySelector('main.main').insertAdjacentHTML('beforeend','<section class="page" id="connections"></section>');
 const sampleOpps=[
-['006A000001','Aperture Systems - New Logo','Aperture Systems','Enterprise','Prospecting',450000,'2027-02-28',10,'Maya Chen','West','New Business','Webinar','FY27 Q1',0,0,'2026-09-12'],
-['006A000002','Northstar Health Platform','Northstar Health','Enterprise','Qualification',720000,'2027-03-20',20,'Sam Rivera','Central','New Business','Outbound','FY27 Q1',0,0,'2026-10-03'],
-['006A000003','Forma Labs Expansion','Forma Labs','Mid-Market','Needs Analysis',185000,'2027-01-31',35,'Jordan Lee','West','Expansion','Customer Referral','FY27 Q1',0,0,'2026-08-28'],
-['006A000004','Atlas Works Renewal Plus','Atlas Works','Commercial','Proposal/Price Quote',96000,'2027-01-15',65,'Theo Brooks','East','Expansion','Partner Referral','FY27 Q1',0,0,'2026-07-14'],
-['006A000005','Kestrel Group AI Program','Kestrel Group','Enterprise','Negotiation/Review',880000,'2027-02-12',80,'Maya Chen','West','New Business','Executive Event','FY27 Q1',1,0,'2026-06-22'],
-['006A000006','Beacon Logistics Rollout','Beacon Logistics','Mid-Market','Closed Won',240000,'2027-01-08',100,'Nia Patel','East','New Business','Inbound','FY27 Q1',1,1,'2026-05-19'],
-['006A000007','Juniper Foods Pilot','Juniper Foods','Commercial','Closed Lost',78000,'2027-01-10',0,'Avery Morgan','Central','New Business','Outbound','FY27 Q1',0,1,'2026-07-07'],
-['006A000008','Meridian Bio Transformation','Meridian Bio','Enterprise','Qualification',1250000,'2027-05-30',20,'Sam Rivera','Central','New Business','ABM','FY27 Q2',0,0,'2026-11-18'],
-['006A000009','Summit Energy Expansion','Summit Energy','Enterprise','Value Proposition',640000,'2027-04-25',50,'Maya Chen','West','Expansion','Customer Success','FY27 Q2',0,0,'2026-09-30'],
-['006A000010','Lattice Retail Platform','Lattice Retail','Mid-Market','Proposal/Price Quote',310000,'2027-06-15',70,'Nia Patel','East','New Business','Content Syndication','FY27 Q2',1,0,'2026-12-04'],
-['006A000011','Cobalt Manufacturing','Cobalt Manufacturing','Mid-Market','Needs Analysis',265000,'2027-06-28',35,'Jordan Lee','West','New Business','Outbound','FY27 Q2',0,0,'2027-01-09'],
-['006A000012','Praxis Financial Services','Praxis Financial','Enterprise','Negotiation/Review',1100000,'2027-04-18',85,'Sam Rivera','Central','New Business','Partner Referral','FY27 Q2',1,0,'2026-08-16'],
-['006A000013','Harbor Education Network','Harbor Education','Commercial','Qualification',84000,'2027-07-22',20,'Theo Brooks','East','New Business','Inbound','FY27 Q3',0,0,'2027-02-11'],
-['006A000014','Redwood Software Expansion','Redwood Software','Mid-Market','Value Proposition',330000,'2027-08-31',50,'Jordan Lee','West','Expansion','Customer Success','FY27 Q3',0,0,'2027-01-28'],
-['006A000015','Vantage Mobility Program','Vantage Mobility','Enterprise','Proposal/Price Quote',930000,'2027-09-19',70,'Maya Chen','West','New Business','ABM','FY27 Q3',0,0,'2027-03-05'],
-['006A000016','Solstice Media Suite','Solstice Media','Commercial','Needs Analysis',125000,'2027-10-30',35,'Avery Morgan','Central','New Business','Webinar','FY27 Q4',0,0,'2027-04-15'],
-['006A000017','Evergreen Insurance','Evergreen Insurance','Enterprise','Qualification',1420000,'2027-11-21',20,'Nia Patel','East','New Business','Executive Event','FY27 Q4',0,0,'2027-05-09'],
-['006A000018','Orion Security Expansion','Orion Security','Mid-Market','Prospecting',290000,'2027-12-15',10,'Sam Rivera','Central','Expansion','Customer Success','FY27 Q4',0,0,'2027-06-03']];
+['006A000001','Aperture Systems - New Logo','Aperture Systems','Enterprise','Prospecting',450000,'2027-02-28',10,'Maya Chen','West','New Business','Webinar','FY27 Q1','Pipeline',0,'2026-09-12'],
+['006A000002','Northstar Health Platform','Northstar Health','Enterprise','Qualification',720000,'2027-03-20',20,'Sam Rivera','Central','New Business','Outbound','FY27 Q1','Pipeline',0,'2026-10-03'],
+['006A000003','Forma Labs Expansion','Forma Labs','Mid-Market','Needs Analysis',185000,'2027-01-31',35,'Jordan Lee','West','Expansion','Customer Referral','FY27 Q1','Pipeline',0,'2026-08-28'],
+['006A000004','Atlas Works Renewal Plus','Atlas Works','Commercial','Proposal/Price Quote',96000,'2027-01-15',65,'Theo Brooks','East','Expansion','Partner Referral','FY27 Q1','Best Case',0,'2026-07-14'],
+['006A000005','Kestrel Group AI Program','Kestrel Group','Enterprise','Negotiation/Review',880000,'2027-02-12',80,'Maya Chen','West','New Business','Executive Event','FY27 Q1','Commit',0,'2026-06-22'],
+['006A000006','Beacon Logistics Rollout','Beacon Logistics','Mid-Market','Closed Won',240000,'2027-01-08',100,'Nia Patel','East','New Business','Inbound','FY27 Q1','Closed',1,'2026-05-19'],
+['006A000007','Juniper Foods Pilot','Juniper Foods','Commercial','Closed Lost',78000,'2027-01-10',0,'Avery Morgan','Central','New Business','Outbound','FY27 Q1','Omitted',1,'2026-07-07'],
+['006A000008','Meridian Bio Transformation','Meridian Bio','Enterprise','Qualification',1250000,'2027-05-30',20,'Sam Rivera','Central','New Business','ABM','FY27 Q2','Pipeline',0,'2026-11-18'],
+['006A000009','Summit Energy Expansion','Summit Energy','Enterprise','Value Proposition',640000,'2027-04-25',50,'Maya Chen','West','Expansion','Customer Success','FY27 Q2','Best Case',0,'2026-09-30'],
+['006A000010','Lattice Retail Platform','Lattice Retail','Mid-Market','Proposal/Price Quote',310000,'2027-06-15',70,'Nia Patel','East','New Business','Content Syndication','FY27 Q2','Best Case',0,'2026-12-04'],
+['006A000011','Cobalt Manufacturing','Cobalt Manufacturing','Mid-Market','Needs Analysis',265000,'2027-06-28',35,'Jordan Lee','West','New Business','Outbound','FY27 Q2','Pipeline',0,'2027-01-09'],
+['006A000012','Praxis Financial Services','Praxis Financial','Enterprise','Negotiation/Review',1100000,'2027-04-18',85,'Sam Rivera','Central','New Business','Partner Referral','FY27 Q2','Commit',0,'2026-08-16'],
+['006A000013','Harbor Education Network','Harbor Education','Commercial','Qualification',84000,'2027-07-22',20,'Theo Brooks','East','New Business','Inbound','FY27 Q3','Pipeline',0,'2027-02-11'],
+['006A000014','Redwood Software Expansion','Redwood Software','Mid-Market','Value Proposition',330000,'2027-08-31',50,'Jordan Lee','West','Expansion','Customer Success','FY27 Q3','Best Case',0,'2027-01-28'],
+['006A000015','Vantage Mobility Program','Vantage Mobility','Enterprise','Proposal/Price Quote',930000,'2027-09-19',70,'Maya Chen','West','New Business','ABM','FY27 Q3','Best Case',0,'2027-03-05'],
+['006A000016','Solstice Media Suite','Solstice Media','Commercial','Needs Analysis',125000,'2027-10-30',35,'Avery Morgan','Central','New Business','Webinar','FY27 Q4','Pipeline',0,'2027-04-15'],
+['006A000017','Evergreen Insurance','Evergreen Insurance','Enterprise','Qualification',1420000,'2027-11-21',20,'Nia Patel','East','New Business','Executive Event','FY27 Q4','Pipeline',0,'2027-05-09'],
+['006A000018','Orion Security Expansion','Orion Security','Mid-Market','Prospecting',290000,'2027-12-15',10,'Sam Rivera','Central','Expansion','Customer Success','FY27 Q4','Pipeline',0,'2027-06-03']];
 const sfHeaders=['Opportunity ID','Opportunity Name','Account Name','Segment','Stage Name','Amount','Close Date','Probability','Opportunity Owner','Region','Type','Lead Source','Fiscal Quarter','Forecast Category','Is Closed','Created Date'];
 let importedOpps=[],importErrors=[],importName='';
 function csvEscape(v){const s=String(v??'');return /[",\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s}
