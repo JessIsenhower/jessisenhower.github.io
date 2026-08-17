@@ -202,7 +202,19 @@
       return items.slice(0,-1).join(', ')+', and '+items[items.length-1];
     }
 
-    function splitHeader(source){
+    function headingKind(line){
+      const heading=line.trim().replace(/[:|]/g,'').replace(/\s+/g,' ').toUpperCase();
+      if(/^(PROFESSIONAL|EXECUTIVE|CAREER)? ?SUMMARY$/.test(heading)||heading==='PROFILE') return 'summary';
+      if(/^(CORE|KEY) (COMPETENCIES|SKILLS)$/.test(heading)||/^(AREAS OF EXPERTISE|TECHNICAL SKILLS|SKILLS)$/.test(heading)) return 'competencies';
+      if(/^(PROFESSIONAL |CAREER |WORK )?EXPERIENCE$/.test(heading)||/^(EMPLOYMENT|CAREER) HISTORY$/.test(heading)) return 'experience';
+      return '';
+    }
+
+    function isContactLine(line){
+      return /@|linkedin\.com|https?:\/\/|www\.|(?:\+?1[ .-]?)?\(?\d{3}\)?[ .-]\d{3}[ .-]\d{4}/i.test(line);
+    }
+
+    function fallbackHeader(source){
       const blocks=source.split(/\n{2,}/);
       if(blocks.length>1&&blocks[0].length<=400&&blocks[0].split('\n').length<=7){
         return {header:blocks.shift().trim(),body:blocks.join('\n\n').trim()};
@@ -212,6 +224,48 @@
         return {header:lines.shift().trim(),body:lines.join('\n').trim()};
       }
       return {header:'',body:source};
+    }
+
+    function parseResumeStructure(source){
+      const lines=source.split('\n');
+      const kinds=lines.map(headingKind);
+      const summaryIndex=kinds.indexOf('summary');
+      const competenciesIndex=kinds.indexOf('competencies');
+      const experienceIndex=kinds.indexOf('experience');
+      if(summaryIndex<0&&competenciesIndex<0&&experienceIndex<0) return fallbackHeader(source);
+
+      const replacementIndexes=[summaryIndex,competenciesIndex].filter(index=>index>=0);
+      const firstReplacement=replacementIndexes.length?Math.min(...replacementIndexes):(experienceIndex>=0?experienceIndex:lines.length);
+      const contactSearchEnd=experienceIndex>=0?experienceIndex:Math.min(lines.length,60);
+      const contactLines=[];
+      for(let i=0;i<contactSearchEnd;i++){
+        const line=lines[i].trim();
+        if(line&&isContactLine(line)&&!contactLines.includes(line)) contactLines.push(line);
+      }
+
+      let name='';
+      for(let i=0;i<firstReplacement;i++){
+        const line=lines[i].trim();
+        if(!line||isContactLine(line)||headingKind(line)||line.length>100) continue;
+        name=line;
+        break;
+      }
+
+      let bodyStart=experienceIndex;
+      if(bodyStart<0){
+        const lastReplacement=Math.max(summaryIndex,competenciesIndex);
+        for(let i=lastReplacement+1;i<lines.length-1;i++){
+          if(!lines[i].trim()){
+            const next=lines.findIndex((line,index)=>index>i&&line.trim());
+            if(next>i){bodyStart=next;break;}
+          }
+        }
+      }
+
+      if(bodyStart<0) return fallbackHeader(source);
+      const header=[name,...contactLines].filter(Boolean).join('\n');
+      const body=lines.slice(bodyStart).join('\n').replace(/^\n+/,'').trim();
+      return {header,body};
     }
 
     function buildAtsResume(key){
@@ -225,7 +279,7 @@
       const summary=evidence.length
         ? identity.charAt(0).toUpperCase()+identity.slice(1)+' with experience across '+joinNatural(evidence)+'. '+role.focus
         : identity.charAt(0).toUpperCase()+identity.slice(1)+'. '+role.focus;
-      const parts=splitHeader(source);
+      const parts=parseResumeStructure(source);
       const sections=[];
       if(parts.header) sections.push(parts.header);
       sections.push(role.resumeTitle);
