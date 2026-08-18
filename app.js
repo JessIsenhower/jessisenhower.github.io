@@ -1,23 +1,9 @@
-const menuButton = document.querySelector('.menu-button');
-const nav = document.querySelector('#site-nav');
-
-menuButton.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(open));
-});
-
-nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-  nav.classList.remove('open');
-  menuButton.setAttribute('aria-expanded', 'false');
-}));
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.08 });
-
-document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+const button=document.querySelector('.menu-button');
+const nav=document.querySelector('#site-nav');
+if(button&&nav){
+  const closeMenu=()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false');};
+  button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open));});
+  nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'){closeMenu();button.focus();}});
+  document.addEventListener('click',event=>{if(!nav.contains(event.target)&&!button.contains(event.target))closeMenu();});
+}
