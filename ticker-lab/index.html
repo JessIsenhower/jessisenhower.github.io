@@ -11,23 +11,20 @@
   <body class="ticker-page">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <a class="wordmark" href="../" aria-label="Jessica Isenhower, home">
-        <span>TL</span>
-        <strong>Ticker Lab</strong>
-      </a>
+      <a class="brand" href="../" aria-label="Jessica Isenhower, home">Jessica Isenhower</a>
       <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#principles">Principles</a>
-        <a href="#progress">Progress</a>
-        <a href="../#special-projects">All special projects</a>
+        <a href="#progress">Build log</a>
+        <a href="../projects.html#lab">Back to Lab</a>
       </nav>
     </header>
 
     <main class="ticker-main" id="main">
       <section class="ticker-hero">
         <div class="ticker-hero-copy reveal">
-          <p class="eyebrow">Special project · Stock research</p>
+          <p class="eyebrow">Lab · Stock research</p>
           <h1>Ticker<br />Lab</h1>
           <p>A personal experiment in making stock research more explainable. Not “what should I buy?” but “why did this company surface, what evidence supports it, and what could make the thesis wrong?”</p>
         </div>
@@ -43,7 +40,7 @@
           <div class="section-label">What it is</div>
           <div>
             <h2>A research queue, not a recommendation engine.</h2>
-            <p>Ticker Lab starts with an open-source momentum screener and asks harder questions of it. The original baseline combines trend structure, relative strength, company fundamentals, market conditions, and risk rules. My work is to make those inputs legible, test them honestly, and reshape the experience around better decisions—not more confident predictions.</p>
+            <p>Ticker Lab starts with an open-source momentum screener and asks harder questions of it. The original baseline combines trend structure, relative strength, company fundamentals, market conditions, and risk rules. My work is to make those inputs legible, test them honestly, and reshape the experience around better decisions, not more confident predictions.</p>
           </div>
         </div>
       </section>
@@ -53,21 +50,9 @@
           <p class="eyebrow reveal">How the lab works</p>
           <h2 class="reveal">Three rules before any score earns trust.</h2>
           <div class="lab-principles">
-            <article class="reveal">
-              <span>01</span>
-              <h3>Explain the signal.</h3>
-              <p>Every surfaced company should show the evidence behind its ranking—not hide the decision inside one polished number.</p>
-            </article>
-            <article class="reveal">
-              <span>02</span>
-              <h3>Test before trusting.</h3>
-              <p>Strategy claims need reproducible tests, realistic timing, honest benchmarks, and periods the model didn’t learn from.</p>
-            </article>
-            <article class="reveal">
-              <span>03</span>
-              <h3>Make uncertainty visible.</h3>
-              <p>Stale data, missing fields, assumptions, and competing evidence belong in the interface—not buried in fine print.</p>
-            </article>
+            <article class="reveal"><span>01</span><h3>Explain the signal.</h3><p>Every surfaced company should show the evidence behind its ranking, not hide the decision inside one polished number.</p></article>
+            <article class="reveal"><span>02</span><h3>Test before trusting.</h3><p>Strategy claims need reproducible tests, realistic timing, honest benchmarks, and periods the model did not learn from.</p></article>
+            <article class="reveal"><span>03</span><h3>Make uncertainty visible.</h3><p>Stale data, missing fields, assumptions, and competing evidence belong in the interface, not buried in fine print.</p></article>
           </div>
         </div>
       </section>
@@ -75,43 +60,23 @@
       <section class="ticker-section light" id="progress">
         <div class="ticker-section-inner">
           <p class="eyebrow reveal">Build log</p>
-          <h2 class="reveal">What’s real—and what isn’t yet.</h2>
+          <h2 class="reveal">What is real and what is not yet.</h2>
           <div class="progress-grid">
-            <article class="progress-card done reveal">
-              <span>Completed</span>
-              <h3>Foundation</h3>
-              <ul>
-                <li>Open-source baseline pinned and attributed</li>
-                <li>Data-handling defects repaired</li>
-                <li>Live side effects removed from unit tests</li>
-                <li>90 deterministic tests passing in GitHub</li>
-                <li>Market-data fallback behavior improved</li>
-              </ul>
-            </article>
-            <article class="progress-card next reveal">
-              <span>Next</span>
-              <h3>Evidence</h3>
-              <ul>
-                <li>Build a resilient market-data layer</li>
-                <li>Run the first controlled stock universe</li>
-                <li>Test for look-ahead and survivorship bias</li>
-                <li>Compare results with simple benchmarks</li>
-                <li>Define my own research preferences</li>
-              </ul>
-            </article>
+            <article class="progress-card done reveal"><span>Completed</span><h3>Foundation</h3><ul><li>Open-source baseline pinned and attributed</li><li>Data-handling defects repaired</li><li>Live side effects removed from unit tests</li><li>90 deterministic tests passing in GitHub</li><li>Market-data fallback behavior improved</li></ul></article>
+            <article class="progress-card next reveal"><span>Next</span><h3>Evidence</h3><ul><li>Build a resilient market-data layer</li><li>Run the first controlled stock universe</li><li>Test for look-ahead and survivorship bias</li><li>Compare results with simple benchmarks</li><li>Define my own research preferences</li></ul></article>
           </div>
         </div>
       </section>
 
       <section class="research-note">
-        <span class="reveal">The important boundary</span>
+        <span class="reveal">Boundary</span>
         <h2 class="reveal">Research prompts, not financial advice.</h2>
-        <p class="reveal">Ticker Lab is an experiment in research quality and decision design. A company appearing in the lab is a reason to investigate—not a recommendation to buy, sell, or hold anything.</p>
-        <a class="reveal" href="../#special-projects">Back to special projects</a>
+        <p class="reveal">A company appearing in the lab is a reason to investigate, not a recommendation to buy, sell, or hold anything.</p>
+        <a class="reveal" href="../projects.html#lab">Back to Lab</a>
       </section>
     </main>
 
-    <footer><strong>Jessica Isenhower</strong><span>Ticker Lab · A special project</span><span>Built to make the reasoning visible</span></footer>
+    <footer><strong>Jessica Isenhower</strong><span>Ticker Lab · Lab project</span><a href="../projects.html#lab">Work + Lab</a></footer>
     <script src="../app.js"></script>
   </body>
 </html>
