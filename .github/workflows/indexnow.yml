@@ -1,0 +1,39 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit public URLs to IndexNow
+        shell: bash
+        run: |
+          curl --fail-with-body --silent --show-error \
+            -X POST 'https://api.indexnow.org/indexnow' \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            --data-binary @- <<'JSON'
+          {
+            "host": "jessisenhower.github.io",
+            "key": "6b6d5fb2f13bea39a0a54bca986bcee0",
+            "keyLocation": "https://jessisenhower.github.io/6b6d5fb2f13bea39a0a54bca986bcee0.txt",
+            "urlList": [
+              "https://jessisenhower.github.io/",
+              "https://jessisenhower.github.io/projects.html",
+              "https://jessisenhower.github.io/experience.html",
+              "https://jessisenhower.github.io/about.html",
+              "https://jessisenhower.github.io/coherence/aop-in-a-box/",
+              "https://jessisenhower.github.io/coherence/sales-operating-system/",
+              "https://jessisenhower.github.io/insight-briefings/",
+              "https://jessisenhower.github.io/coherence/assessment/",
+              "https://jessisenhower.github.io/ticker-lab/",
+              "https://jessisenhower.github.io/epic-ai-fails/"
+            ]
+          }
+          JSON
