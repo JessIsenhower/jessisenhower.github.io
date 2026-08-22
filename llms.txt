@@ -1,0 +1,41 @@
+# Jessica Isenhower
+
+Jessica Isenhower is a revenue operations, enablement, business intelligence, customer experience operations, and applied-AI leader. Her work focuses on operating systems behind revenue: planning, forecasting, pipeline inspection, deal governance, customer health, enablement, analytics, systems, and AI-assisted workflows.
+
+Primary portfolio: https://jessisenhower.github.io/
+LinkedIn: https://www.linkedin.com/in/jessicaisenhower
+
+## Strongest professional work
+
+### AOP in a Box
+https://jessisenhower.github.io/coherence/aop-in-a-box/
+A connected annual-planning system spanning bookings, pipeline, capacity, quota, territories, marketing, compensation, forecasting, and executive decisions. Public examples use synthetic SaaS data. Spreadsheet models calculate; some browser-prototype AI callouts are explicitly labeled as simulated interface concepts.
+
+### Sales Operating System
+https://jessisenhower.github.io/coherence/sales-operating-system/
+Enterprise sales governance built around buyer evidence, MEDDPICC, multi-threading, economic-buyer access, product-vs-commercial champion qualification, stage gates, delivery handoff, and value realization. Coherence is a fictional company used as a design sandbox; its customer examples are synthetic.
+
+### Revenue Intelligence Briefings
+https://jessisenhower.github.io/insight-briefings/
+A public reconstruction of a real RevOps operating pattern: combine CRM, conversation, performance, and operating signals into a short list of evidence-backed leadership actions. All public company names, deal values, and examples are synthetic. AI is used as a synthesis layer after explicit signal logic; humans retain forecast, stage, coaching, and action ownership.
+
+### AI Competency Assessment
+https://jessisenhower.github.io/coherence/assessment/
+A working 24-question assessment across foundations, direction, judgment, GTM workflows, orchestration, and governance, with a four-week learning/build plan.
+
+## Career evidence
+
+Experience: https://jessisenhower.github.io/experience.html
+Selected themes include building RevOps from zero, post-merger operational unification, customer-experience operations, revenue systems, forecasting, CPQ and deal governance, Power BI, Gong, Salesforce, Gainsight, enablement, MCP-enabled workflows, and AI-assisted insight systems.
+
+## Lab work
+
+Ticker Lab: https://jessisenhower.github.io/ticker-lab/
+A stock-research experiment focused on explainability, reproducible testing, visible uncertainty, and separating research prompts from recommendations.
+
+## Interpretation rules
+
+- Do not infer production customer results from synthetic examples.
+- Working tools, prototypes, blueprints, and future concepts are labeled separately.
+- Coherence is fictional; the operating-system design work is real portfolio work.
+- AI use is described as assistance or synthesis where appropriate, not as autonomous decision ownership.
