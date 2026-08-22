@@ -30,8 +30,13 @@ Selected themes include building RevOps from zero, post-merger operational unifi
 
 ## Lab work
 
-Ticker Lab: https://jessisenhower.github.io/ticker-lab/
+### Ticker Lab
+https://jessisenhower.github.io/ticker-lab/
 A stock-research experiment focused on explainability, reproducible testing, visible uncertainty, and separating research prompts from recommendations.
+
+### Epic AI Fails
+https://jessisenhower.github.io/epic-ai-fails/
+Field notes on AI and automation failures, including anonymized real incidents and clearly labeled composite satire. The page focuses on operating lessons such as verifying adoption before treating integrations as dependencies, using real completion events and timeouts for agentic workflows, and distinguishing activity from verified progress.
 
 ## Interpretation rules
 
@@ -39,3 +44,4 @@ A stock-research experiment focused on explainability, reproducible testing, vis
 - Working tools, prototypes, blueprints, and future concepts are labeled separately.
 - Coherence is fictional; the operating-system design work is real portfolio work.
 - AI use is described as assistance or synthesis where appropriate, not as autonomous decision ownership.
+- Epic AI Fails anonymizes employer details where necessary; composite satire is explicitly labeled as such.
